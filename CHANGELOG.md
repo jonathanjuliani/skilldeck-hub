@@ -4,6 +4,10 @@ All notable changes to skilldeck are listed here. The format follows [Keep a Cha
 
 ## [Unreleased]
 
+### Changed
+
+- The README is the install action. What each command skips, and the fallback when `claude` is not on PATH, live in `docs/install.md`.
+
 ## [0.1.0] - 2026-10-08
 
 ### Added
