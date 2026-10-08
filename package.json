@@ -1,0 +1,39 @@
+{
+  "name": "@jonathanjuliani/skilldeck",
+  "version": "0.1.0",
+  "description": "Install the skills pack and Skillverse from one Claude Code marketplace.",
+  "type": "module",
+  "bin": {
+    "skilldeck": "bin/skilldeck.mjs"
+  },
+  "files": [
+    "bin/",
+    "cli/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "author": "Jonathan Juliani (https://github.com/jonathanjuliani)",
+  "homepage": "https://github.com/jonathanjuliani/skilldeck",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathanjuliani/skilldeck.git"
+  },
+  "bugs": "https://github.com/jonathanjuliani/skilldeck/issues",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "skills",
+    "skillverse",
+    "plugins"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

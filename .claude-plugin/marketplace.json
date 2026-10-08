@@ -1,0 +1,26 @@
+{
+  "name": "skilldeck",
+  "owner": {
+    "name": "Jonathan Juliani",
+    "url": "https://github.com/jonathanjuliani"
+  },
+  "description": "Jonathan Juliani's skills and Skillverse, from one marketplace.",
+  "plugins": [
+    {
+      "name": "skills",
+      "source": {
+        "source": "github",
+        "repo": "jonathanjuliani/skills"
+      },
+      "description": "Detects a project's conventions and defers to them."
+    },
+    {
+      "name": "skillverse",
+      "source": {
+        "source": "github",
+        "repo": "jonathanjuliani/skillverse"
+      },
+      "description": "A tree of every skill, links between skills, context cost, and the web view."
+    }
+  ]
+}
