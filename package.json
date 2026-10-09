@@ -1,6 +1,6 @@
 {
   "name": "@jonathanjuliani/skilldeck",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Install the skills pack and Skillverse from one Claude Code marketplace.",
   "type": "module",
   "bin": {

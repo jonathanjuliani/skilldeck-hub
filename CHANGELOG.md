@@ -6,6 +6,8 @@ Add each change under **Unreleased** as you make it; `npm version` moves them un
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-10-09
+
 ### Added
 
 - A version tag publishes `@jonathanjuliani/skilldeck` to npm and opens the GitHub Release.
@@ -29,6 +31,7 @@ Add each change under **Unreleased** as you make it; `npm version` moves them un
 - `skilldeck install skills` installs `skills@skilldeck` when no skills plugin is already installed.
 - `skilldeck install skillverse` installs `skillverse@skilldeck` when no Skillverse plugin is already installed, and installs the `@jonathanjuliani/skillverse` web app when it is missing.
 
-[Unreleased]: https://github.com/jonathanjuliani/skilldeck/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/jonathanjuliani/skilldeck/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/jonathanjuliani/skilldeck/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/jonathanjuliani/skilldeck/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/jonathanjuliani/skilldeck/releases/tag/v0.1.0
