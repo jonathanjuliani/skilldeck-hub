@@ -8,9 +8,9 @@ Both routes install the same plugins. The npm command adds the marketplace `jona
 
 ## skills
 
-`skilldeck install skills` installs `skills@skilldeck` when neither `skills@skilldeck` nor `jon@skills` is already installed.
+`skilldeck install skills` installs `skills@skilldeck` when that plugin is not already installed.
 
-If one of those is already installed, it stops and says so. A second copy would load every skill twice.
+If it is already installed, the command stops and says so. A second copy would load every skill twice.
 
 After it installs, start a new Claude Code session. Setup is `/jon:setup-skills`.
 
@@ -45,10 +45,19 @@ npm install -g @jonathanjuliani/skillverse
 
 ## Other agents
 
-Cursor, Codex, and Gemini keep their own install paths in the [skills repo](https://github.com/jonathanjuliani/skills). This marketplace is Claude Code.
+Codex uses this same marketplace:
+
+```bash
+codex plugin marketplace add jonathanjuliani/skilldeck
+codex plugin add skills@skilldeck
+```
+
+The npm command is Claude Code. It calls the `claude` CLI.
+
+Cursor and Gemini keep their own install paths in the [skills repo](https://github.com/jonathanjuliani/skills).
 
 ## It's working if
 
-- Skills shows once, as `skills@skilldeck` or `jon@skills`, not both.
+- Skills shows once, as `skills@skilldeck`.
 - Skillverse shows one button, not two.
 - The web app is installed, and you still start it yourself with `skillverse run`.

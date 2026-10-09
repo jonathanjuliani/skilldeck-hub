@@ -43,16 +43,6 @@ test('install skills adds the marketplace and the plugin', () => {
   assert.match(io.logs[0], /Installed skills@skilldeck/)
 })
 
-test('install skills skips when jon@skills is already installed', () => {
-  const io = fake({
-    [marketList]: { stdout: '[{"name":"skilldeck"}]' },
-    [pluginList]: { stdout: '[{"id":"jon@skills","enabled":false}]' },
-  })
-  assert.equal(install('skills', { ...io, pluginDirs: [] }), 0)
-  assert.equal(io.calls.includes('claude plugin install skills@skilldeck --scope user --yes'), false)
-  assert.match(io.logs[0], /already installed as jon@skills/)
-})
-
 test('install skills skips when skills@skilldeck is already installed', () => {
   const io = fake({
     [marketList]: { stdout: '[{"name":"skilldeck"}]' },

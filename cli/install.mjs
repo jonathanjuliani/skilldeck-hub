@@ -6,7 +6,7 @@ export const MARKETPLACE = 'jonathanjuliani/skilldeck'
 export const MARKETPLACE_NAME = 'skilldeck'
 export const WEB_APP = '@jonathanjuliani/skillverse'
 
-const SKILLS_IDS = ['skills@skilldeck', 'jon@skills']
+const SKILLS_IDS = ['skills@skilldeck']
 const SKILLVERSE_IDS = ['skillverse@skilldeck', 'skillverse@skillverse']
 
 const PLUGIN_INSTALL = ['plugin', 'install']

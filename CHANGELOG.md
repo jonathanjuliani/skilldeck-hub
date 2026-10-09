@@ -2,7 +2,18 @@
 
 All notable changes to skilldeck are listed here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+Add each change under **Unreleased** as you make it; `npm version` moves them under the new version when you release (see [Releasing](docs/develop.md#releasing)).
+
 ## [Unreleased]
+
+### Added
+
+- A version tag publishes `@jonathanjuliani/skilldeck` to npm and opens the GitHub Release.
+
+### Changed
+
+- `skilldeck install skills` skips only when `skills@skilldeck` is already installed.
+- Codex installs the skills plugin from this marketplace as `skills@skilldeck`. The npm command is Claude Code.
 
 ## [0.1.1] - 2026-10-08
 

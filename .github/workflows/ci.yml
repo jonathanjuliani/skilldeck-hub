@@ -1,0 +1,30 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: The package version is in the changelog
+        run: npm run check-version
+
+      - name: Test
+        run: node --test
+
+      - name: The npm package installs and runs
+        run: |
+          npm pack --pack-destination /tmp
+          mkdir /tmp/try && cd /tmp/try && npm init -y >/dev/null
+          npm install /tmp/jonathanjuliani-skilldeck-*.tgz
+          ./node_modules/.bin/skilldeck --version
+          ./node_modules/.bin/skilldeck --help

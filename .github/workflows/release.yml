@@ -1,0 +1,47 @@
+name: release
+
+# Push a version tag (npm version does it: see docs/develop.md, Releasing) to publish
+# the npm package and the GitHub Release.
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write # the GitHub Release
+  id-token: write # npm provenance
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+
+      - name: The tag and the changelog agree
+        run: node scripts/sync-version.mjs --check "$GITHUB_REF_NAME"
+
+      - name: Test
+        run: node --test
+
+      # npm signs the provenance statement. There is no install step: the package has no dependencies.
+      - name: Publish the npm package
+        run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: GitHub Release from the changelog
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          awk -v v="$version" '
+            $0 ~ "^## \\[" v "\\]" { found = 1; next }
+            found && /^## \[/ { exit }
+            found && /^\[[^]]+\]: / { exit }
+            found { print }
+          ' CHANGELOG.md > notes.md
+          gh release create "$GITHUB_REF_NAME" --title "skilldeck $version" --notes-file notes.md --verify-tag
+        env:
+          GH_TOKEN: ${{ github.token }}

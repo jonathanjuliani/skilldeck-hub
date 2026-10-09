@@ -9,6 +9,8 @@
   "files": [
     "bin/",
     "cli/",
+    "docs/install.md",
+    "docs/develop.md",
     "README.md",
     "LICENSE",
     "CHANGELOG.md"
@@ -17,7 +19,9 @@
     "node": ">=18"
   },
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "version": "node scripts/sync-version.mjs && git add CHANGELOG.md",
+    "check-version": "node scripts/sync-version.mjs --check"
   },
   "author": "Jonathan Juliani (https://github.com/jonathanjuliani)",
   "homepage": "https://github.com/jonathanjuliani/skilldeck",
