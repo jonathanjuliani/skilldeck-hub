@@ -6,6 +6,8 @@ Add each change under **Unreleased** as you make it; `npm version` moves them un
 
 ## [Unreleased]
 
+## [0.1.4] - 2026-10-09
+
 ### Added
 
 - Cursor reads `.cursor-plugin/marketplace.json` and installs the skills pack as `skilldeck`. Skillverse stays on the Claude Code catalog.
@@ -41,7 +43,8 @@ Add each change under **Unreleased** as you make it; `npm version` moves them un
 - `skilldeck install skills` installs `skills@skilldeck` when no skills plugin is already installed.
 - `skilldeck install skillverse` installs `skillverse@skilldeck` when no Skillverse plugin is already installed, and installs the `@jonathanjuliani/skillverse` web app when it is missing.
 
-[Unreleased]: https://github.com/jonathanjuliani/skilldeck/compare/v0.1.3...HEAD
+[Unreleased]: https://github.com/jonathanjuliani/skilldeck/compare/v0.1.4...HEAD
+[0.1.4]: https://github.com/jonathanjuliani/skilldeck/compare/v0.1.3...v0.1.4
 [0.1.3]: https://github.com/jonathanjuliani/skilldeck/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/jonathanjuliani/skilldeck/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/jonathanjuliani/skilldeck/compare/v0.1.0...v0.1.1
