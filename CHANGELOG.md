@@ -6,6 +6,10 @@ Add each change under **Unreleased** as you make it; `npm version` moves them un
 
 ## [Unreleased]
 
+### Changed
+
+- After `skilldeck install skills`, setup is `/skilldeck:setup-skills`.
+
 ## [0.1.2] - 2026-10-09
 
 ### Added

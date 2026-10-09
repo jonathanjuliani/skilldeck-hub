@@ -12,7 +12,7 @@ Both routes install the same plugins. The npm command adds the marketplace `jona
 
 If it is already installed, the command stops and says so. A second copy would load every skill twice.
 
-After it installs, start a new Claude Code session. Setup is `/jon:setup-skills`.
+After it installs, start a new Claude Code session. Setup is `/skilldeck:setup-skills`. It asks before writing `.skilldeck-skills/config.yaml`.
 
 ## skillverse
 

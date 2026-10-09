@@ -161,7 +161,7 @@ export function install(target, options) {
         return 0
       }
       installPlugin(run, 'skills@skilldeck')
-      log('Installed skills@skilldeck. Start a new Claude Code session. Setup is /jon:setup-skills.')
+      log('Installed skills@skilldeck. Start a new Claude Code session. Setup is /skilldeck:setup-skills.')
       return 0
     }
 

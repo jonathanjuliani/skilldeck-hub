@@ -26,7 +26,7 @@ skilldeck install skillverse
 
 Start a new Claude Code session after installing.
 
-`skills@skilldeck` is the pack in [jonathanjuliani/skills](https://github.com/jonathanjuliani/skills). Slash commands stay `/jon:…`, and setup is `/jon:setup-skills`. Codex installs the same plugin with `codex plugin marketplace add jonathanjuliani/skilldeck` and `codex plugin add skills@skilldeck`. The npm command is Claude Code.
+`skills@skilldeck` is the pack in [jonathanjuliani/skills](https://github.com/jonathanjuliani/skills). Slash commands are `/skilldeck:…`, and setup is `/skilldeck:setup-skills`. Codex installs the same plugin with `codex plugin marketplace add jonathanjuliani/skilldeck` and `codex plugin add skills@skilldeck`. The npm command is Claude Code.
 
 `skillverse@skilldeck` is the plugin in [jonathanjuliani/skillverse](https://github.com/jonathanjuliani/skillverse). It is the same plugin as `skillverse@skillverse`. The web app is a separate install.
 
