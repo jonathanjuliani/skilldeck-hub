@@ -52,12 +52,15 @@ codex plugin marketplace add jonathanjuliani/skilldeck
 codex plugin add skills@skilldeck
 ```
 
+Cursor reads `.cursor-plugin/marketplace.json` in this repo. Add `https://github.com/jonathanjuliani/skilldeck`, then install the plugin named `skilldeck`. That is the same pack. Skillverse is not in the Cursor catalog.
+
 The npm command is Claude Code. It calls the `claude` CLI.
 
-Cursor and Gemini keep their own install paths in the [skills repo](https://github.com/jonathanjuliani/skills).
+Gemini keeps its own install path in the [skills repo](https://github.com/jonathanjuliani/skills).
 
 ## It's working if
 
 - Skills shows once, as `skills@skilldeck`.
 - Skillverse shows one button, not two.
 - The web app is installed, and you still start it yourself with `skillverse run`.
+- In Cursor, the marketplace lists `skilldeck`, and Skillverse is not there.

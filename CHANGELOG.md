@@ -6,6 +6,10 @@ Add each change under **Unreleased** as you make it; `npm version` moves them un
 
 ## [Unreleased]
 
+### Added
+
+- Cursor reads `.cursor-plugin/marketplace.json` and installs the skills pack as `skilldeck`. Skillverse stays on the Claude Code catalog.
+
 ## [0.1.3] - 2026-10-09
 
 ### Changed

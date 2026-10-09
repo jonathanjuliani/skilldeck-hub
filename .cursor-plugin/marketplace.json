@@ -1,0 +1,16 @@
+{
+  "name": "skilldeck",
+  "owner": {
+    "name": "Jonathan Juliani"
+  },
+  "metadata": {
+    "description": "The skills pack, from the skilldeck marketplace."
+  },
+  "plugins": [
+    {
+      "name": "skilldeck",
+      "source": "https://github.com/jonathanjuliani/skills",
+      "description": "Detects a project's conventions and defers to them."
+    }
+  ]
+}
